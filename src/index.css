@@ -1,13 +1,163 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#search{
+    width: 98%;
+    margin: auto;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin-top : 20px;
+}
+.searchbox i{
+    padding:5px 8px;
+    font-size: larger;
+}
+
+input{
+    outline: none;
+    border: none;
+    width: 100%;
+}
+.header-large-title{
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.title{
+    font-weight:bolder;
+    font-size:2rem ;
+}
+
+.foot {  
+    position: fixed; 
+    bottom:0%;
+    width:100%;
+    border: 1px solid lightgray;
+    border-radius: 20px 20px 0 0;
+    background-color: white;
+}
+
+.footer
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:active{
+    color: yellow;
+}
+
+.footer svg{
+    margin-top: 10px;
+}
+
+.small{
+    font-size: 0.7rem;
+    color: gray;
+    font-style: none;
+}
+
+.left{
+    position: absolute;
+    left: 25px;
+    top: 17px;
+}
+
+.left svg{
+    color: white;
+}
+
+.right{
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.container{
+    display: flex;
+    justify-content: flex-end;
+    /* font-size: 0.5rem; */
+}
+
+.container button {
+    margin: 0 2px;
+    font-size: 0.9rem;
+    padding: 10px 25px;
+}
+
+ul{
+    list-style: none;
+    margin-top: 15px;
+    padding: 0;
+}
+
+ul a{
+    padding: 0 15px;
+}
+
+.shift_right svg{
+    position: absolute;
+    right: 15px;
+    color: lightgrey;
+}
+hr:not([size]){
+    height: 0.5px;
+}
+
+li{
+    cursor: pointer;
+}
+
+.icon-box{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    text-align: center;
+    padding: 8px 5px;
+    border-radius: 50%;
+}
+
+.icon-box svg{
+    color: white;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid lightgrey;
+}
+.listview{
+    margin-top: 0;
+}
+
+.listview li{
+    border-bottom: 0.5px;
+}
+.newicon{
+    width: 60px;
+}
+.innertext{
+    font-size: 1rem;
+}
+.icontext{
+    text-align: center;
+    padding-top: 15px;
+}
+
+ .row{
+    --bs-gutter-x:0;
 }
